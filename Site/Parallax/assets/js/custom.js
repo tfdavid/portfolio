@@ -173,7 +173,7 @@
 			else {
 				$.ajax({
 					type: 'POST',
-					url: 'assets/php/contactForm.php',
+					url: 'assets/php/php_mailer/mail_handler.php',
 					dataType: 'json',
 					data: {
 						c_email: c_email,
@@ -185,13 +185,13 @@
 						$('#contact-form button').append('<i class="fa fa-cog fa-spin"></i> Wait...');
 					},
 					success: function(result) {
-						if(result.sendstatus == 1) {
+						if(result.success === true) {
 							$('#contact-form .ajax-hidden').fadeOut(500);
-							responseMessage.html(result.message).fadeIn(500);
+							responseMessage.html(result.messages[0]).fadeIn(500);
 						} else {
 							$('#contact-form button').empty();
 							$('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
-							responseMessage.html(result.message).fadeIn(1000);
+							responseMessage.html(result.messages).fadeIn(1000);
 						}
 					}
 				});
