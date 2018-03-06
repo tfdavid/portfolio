@@ -486,6 +486,7 @@ textarea.form-control {
 	width: 100%;
 	top: 50%;
 	left: 0;
+	text-shadow: 1px 1px 1px black;
 	text-align: center;
 	-webkit-transform: translate(0%, -50%);
 	   -moz-transform: translate(0%, -50%);
@@ -512,7 +513,7 @@ textarea.form-control {
 	background: #fff;
 	border-bottom: 1px solid #d4d4d4;
 	text-align: center;
-	padding: 40px 20px;
+	/* padding: 40px 20px; */
 	margin: 0 0 20px;
 }
 
