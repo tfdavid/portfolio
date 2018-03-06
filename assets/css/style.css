@@ -543,10 +543,10 @@ textarea.form-control {
 .side-image {
 	position: absolute;
 	background: url(../images/about.jpg) scroll center no-repeat;
-	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+	-webkit-background-size: contain;
+	   -moz-background-size: contain;
+		 -o-background-size: contain;
+			background-size: contain;
 	height: 100%;
 }
 
