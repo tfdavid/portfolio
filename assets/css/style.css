@@ -634,6 +634,27 @@ textarea.form-control {
 	width: 100%;
 	height: auto;
 }
+.bubbleContainer{
+	background: #585353;
+}
+#bubbleProj {
+    width: 29.3%;
+    margin: auto;
+}
+.SGTcontainer{
+	background: #585353;
+}
+/* #SGTproj{
+	width: 35.1%;
+    margin: auto;
+} */
+.memoryMatchContainer{
+	background: #585353;
+}
+/* #memoryProj{
+	width: 35.1%;
+    margin: auto;
+} */
 
 .portfolio-items-container .portfolio-item {
 -webkit-transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
@@ -1092,9 +1113,9 @@ button.mfp-close {
 		height: 300px;
 	}
 
-	.portfolio-items-container .portfolio-item {
+	/* .portfolio-items-container .portfolio-item {
 		width: 50%;
-	}
+	} */
 
 	.white-popup-block {
 		margin: 80px auto;
