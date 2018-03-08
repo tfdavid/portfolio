@@ -681,16 +681,8 @@ transition: opacity 0.35s ease 0s, transform 0.35s ease 0s;
 	transform: scale(1.1);
 }
 
-.portfolio-items-container .portfolio-item a {
-	font-size: 0;
-	height: 100%;
-	left: 0;
-	opacity: 0;
-	position: absolute;
-	text-indent: 200%;
-	top: 0;
-	width: 100%;
-	z-index: 1000;
+.portfolio-items-container .portfolio-item a:hover {
+	cursor: pointer
 }
 
 .portfolio-items-container .caption-inner {
@@ -1208,4 +1200,12 @@ border-right: 1px solid #f1f1f1;
 line-height: 40px;
 text-align: center;
 font-size: 14px;
+}
+
+#mobileTags{
+	text-align: center;
+	background-color: white;
+}
+#mobileTags a{
+	padding: 18%;
 }
