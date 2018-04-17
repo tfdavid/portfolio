@@ -126,10 +126,11 @@
 
 			if (( c_name== '' || c_email == '' || c_message == '') || (!isValidEmailAddress(c_email) )) {
 				responseMessage.fadeIn(500);
-				responseMessage.html('<i class="fa fa-warning"></i> Please fix the errors and try again.');
+				responseMessage.html('<i class="fa fa-warning"></i> Please make sure all fields are filled out.');
 			}
 
 			else {
+				console.log("making ajax call")
 				$.ajax({
 					type: 'POST',
 					url: 'assets/php/php_mailer/mail_handler.php',
@@ -152,7 +153,12 @@
 							$('#contact-form button').append('<i class="fa fa-retweet"></i> Try again.');
 							responseMessage.html(result.messages).fadeIn(1000);
 						}
-					}
+					},
+					error: function(result){
+						$('#contact-form button').empty();
+						$('#contact-form button').append('<i class="fa fa-retweet"></i> Connection Failed. Please Try Again Later.');
+					},
+					timeout: 5000
 				});
 			}
 

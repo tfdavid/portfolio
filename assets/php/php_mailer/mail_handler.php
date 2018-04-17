@@ -78,7 +78,7 @@
         $output['messages'][] = $mail->ErrorInfo;
     } else {
         $output['success'] = true;
-        $output['messages'][] = 'message sent successfully';
+        $output['messages'][] = 'Message sent successfully!';
 
     }
     echo json_encode($output);
