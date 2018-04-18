@@ -130,7 +130,6 @@
 			}
 
 			else {
-				// console.log("making ajax call")
 				$.ajax({
 					type: 'POST',
 					url: 'assets/php/php_mailer/mail_handler.php',

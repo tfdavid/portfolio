@@ -75,7 +75,7 @@
 
     if(!$mail->send()) {
         $output['success'] = false;
-        $output['messages'][] = $mail->ErrorInfo;
+        $output['messages'][] = 'Message failed to send'; 
     } else {
         $output['success'] = true;
         $output['messages'][] = 'Message sent successfully!';
