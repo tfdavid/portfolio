@@ -648,6 +648,9 @@ textarea.form-control {
 	width: 35.1%;
     margin: auto;
 } */
+#SGTproj{
+	position: relative;
+}
 .memoryMatchContainer{
 	background: #585353;
 }
